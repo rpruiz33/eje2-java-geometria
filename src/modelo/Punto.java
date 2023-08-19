@@ -40,9 +40,10 @@ public class Punto {
 	public String toString() {
 		return "(" + x + "," + y + ")";
 	}
-	public float calcularDistancia(Punto p1 , Punto p2) {
-		
-		return (float) Math.sqrt(Math.pow(((p1.getX()-p2.getX())),2)+Math.pow(((p1.getY()-p2.getY())),2));
-		
+
+	public double calcularDistancia(Punto otroPunto) {
+		double dx = otroPunto.x - this.x;
+		double dy = otroPunto.y - this.y;
+		return Math.sqrt(dx * dx + dy * dy);
 	}
 }
