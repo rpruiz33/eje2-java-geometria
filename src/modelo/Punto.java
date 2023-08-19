@@ -12,7 +12,7 @@ public class Punto {
 		this.y = y;
 	}
 
-//métodos getter y setter
+//mï¿½todos getter y setter
 	public double getX() {
 		return x;
 	}
@@ -29,15 +29,20 @@ public class Punto {
 		this.y = y;
 	}
 
-//re-definición de métodos de la clase Object
+//re-definicion de metodos de la clase Object
 // sobrecarga
 	public boolean equals(Punto p) {
 		return ((x == p.getX()) && (y == p.getY()));
 	}
 
-// re-definición
+// re-definicion
 	@Override
 	public String toString() {
 		return "(" + x + "," + y + ")";
+	}
+	public float calcularDistancia(Punto p1 , Punto p2) {
+		
+		return (float) Math.sqrt(Math.pow(((p1.getX()-p2.getX())),2)+Math.pow(((p1.getY()-p2.getY())),2));
+		
 	}
 }
