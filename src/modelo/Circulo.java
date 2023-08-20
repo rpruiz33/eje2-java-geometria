@@ -27,4 +27,9 @@ public class Circulo {
 		this.origen = origen;
 		this.radio = radio;
 	}
+	
+	public boolean equals(Circulo c) {
+		 return (origen.equals(c.origen)) && (radio == c.radio);
+		
+	}
 }
