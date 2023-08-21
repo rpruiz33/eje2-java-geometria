@@ -26,11 +26,11 @@ public class Test {
 		System.out.println(p1.equals(p2));
 		System.out.println(c1.toString());
 		System.out.println(c2.toString());
-		System.out.println("perimetro");
+		System.out.println("perimetro c1");
 		System.out.println(c1.perimetro(c1));
 		System.out.println("perimetro");
 		System.out.println(c2.perimetro(c2));
-		System.out.println("area del sirculo");
+		System.out.println("area del sirculo c1");
 		System.out.println(c1.area(c1));
 		System.out.println(c2.distanciaEntreCirculo(c1));
 	}
